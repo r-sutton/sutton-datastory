@@ -1,0 +1,73 @@
+stlye.css
+@import url(https://fonts.googleapis.com/css?family=Merriweather:200,400,700|Open+Sans:400italic,700italic,400,700|Slabo+27px:400);
+
+body {
+    background-color: lightgrey;
+}
+
+html {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: dimgrey;
+  text-shadow: 2px 2px darkgrey;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: Merriweather;
+}
+
+h4 {
+  font-family: Merriweather;
+  font-size: 15px;
+  text-align: center;
+}
+
+#mainimg {
+  min-height: 200px;
+  background: darkgrey;
+}
+
+#box {
+  height: 160px;
+  margin: 10px auto;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 0 8px #666;
+  overflow: hidden;
+  padding: 10px;
+  font-family: Merriweather;
+  font-size: 13px;
+}
+
+.blocks {
+  display: block;
+  width: 260px;
+  float: left;
+  margin-right: 16px;
+  margin-left: 16px;
+  padding: 10px;
+  height: 400px;
+  background: #fff;
+  box-shadow: 0 0 8px #666;
+  text-align: justify;
+  font-family: Merriweather;
+  font-size: 13px;
+  margin-bottom: 35px
+
+}
+
+img.icons {
+  display: block;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+@media screen and (min-width: 1080px) {
+  section#personal {
+    grid-template-columns: 400px 1fr;
+  }

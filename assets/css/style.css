@@ -30,7 +30,7 @@ h4 {
 .header {
   display: block;
   height: auto;
-  max-width: 1080px;
+  width: 100%;
 }
 
 #box {

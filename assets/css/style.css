@@ -27,6 +27,11 @@ h4 {
   text-align: center;
 }
 
+.header {
+  display; block;
+  height: 400px;
+  width: 100%;
+}
 
 #box {
   height: 160px;

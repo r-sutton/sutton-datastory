@@ -27,10 +27,6 @@ h4 {
   text-align: center;
 }
 
-.header {
-  height: auto;
-  width: 1080px;
-}
 
 #box {
   height: 160px;
@@ -67,7 +63,7 @@ img.icons {
   margin-left: 80px;
 }
 
-@media screen and (min-width: 1080px) {
-  section#personal {
+@media screen and (min-width: 960px) {
+  section#blocks {
     grid-template-columns: 400px 1fr;
   }

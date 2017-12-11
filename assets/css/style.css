@@ -28,8 +28,9 @@ h4 {
 }
 
 .header {
+  display: block;
   height: auto;
-  width: 100%;
+  max-width: 1080px;
 }
 
 #box {

@@ -101,7 +101,7 @@ header {
     }
 
 @media screen and (max-width: 670px) {
-  section#social div.media-wrapper, section#blocks div.blocks {
+  section#social div.media-wrapper, section#blocks, div.blocks {
     grid-row: 1;
     grid-column: 1;
   }

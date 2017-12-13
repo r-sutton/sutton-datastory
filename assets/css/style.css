@@ -1,8 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:200,400,700|Open+Sans:400italic,700italic,400,700|Slabo+27px:400);
 
 html {
-  background: radial-gradient(circle at center, orange, lightblue);
+  background: radial-gradient(circle at center, bisque, lightblue);
 }
+
+header {
+  margin-bottom: 30px;
+}
+
 p {
   margin: 15px;
 }
@@ -11,19 +16,32 @@ body {
   font-size: 15px;
   font-family: "Merriweather";
 }
-h1,h2,h3,h4 {
+
+a:link {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+h1,h2,h3, {
   font-family: "Merriweather";
-  margin: 15px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   color: white;
   text-shadow: 2px 2px black;
+  margin-left: 15px;
 }
 
-h4 {
-  font-family: Merriweather;
+h2 {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 2px 2px black;
+  margin-left: 15px;
+}
+
+h3 {
   font-size: 15px;
   text-align: center;
 }
@@ -35,7 +53,7 @@ h4 {
   margin-right: 16px;
   margin-left: 16px;
   padding: 10px;
-  height: 440px;
+  height: 400px;
   box-shadow: 0 0 10px #666;
   text-align: justify;
   font-family: Merriweather;
@@ -50,6 +68,7 @@ img.icons {
   margin-left: 80px;
 }
 
+
 div.video-container {
   position: relative;
   width: 100%;
@@ -61,13 +80,14 @@ div.video-container iframe {
   top: 0; left: 0;
   margin-left: 15px;
   width: 90%;
-  height: 150%;
+  height: 100%;
+  margin-bottom: 35px
 }
 
 section#social,
-header, footer {
+header {
  display: grid;
- grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media screen and (min-width:1080px) {
@@ -76,25 +96,15 @@ header, footer {
   }
 
 @media screen and (min-width:1080px) {
-  div.media-wrapper {
-      grid-template-columns: 40% 60%;
+  header {
+      grid-template-columns: 46% 54%;
     }
 
 @media screen and (max-width: 670px) {
-  section#social div.media-wrapper, section#blocks div.blocks div.video-container {
+  section#social div.media-wrapper, section#blocks div.blocks {
     grid-row: 1;
     grid-column: 1;
   }
-
-section#social div {
-  min-height: 350px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
-section#personal div.content-wrapper {
-  margin-left: 15px;
-}
 
 section#social div.content-wrapper {
   margin-right: 15px;
@@ -105,5 +115,5 @@ header {
 }
 
 footer {
-  min-height: 350px;
+  height: 350px;
 }

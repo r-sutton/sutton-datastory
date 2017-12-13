@@ -1,24 +1,25 @@
-style.css
 @import url(https://fonts.googleapis.com/css?family=Merriweather:200,400,700|Open+Sans:400italic,700italic,400,700|Slabo+27px:400);
 
-body {
-    background-color: lightgrey;
-}
-
 html {
-  font-size: 18px;
+  background: radial-gradient(circle at center, orange, lightblue);
+}
+p {
+  margin: 15px;
 }
 
-h2 {
+body {
+  font-size: 15px;
+  font-family: "Merriweather";
+}
+h1,h2,h3,h4 {
+  font-family: "Merriweather";
+  margin: 15px;
+}
+
+h1 {
   font-size: 2.5rem;
-  color: #008080;
-  text-shadow: 2px 2px darkgrey;
-  text-align: center;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-family: Merriweather;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 h4 {
@@ -27,32 +28,19 @@ h4 {
   text-align: center;
 }
 
-#box {
-  height: 160px;
-  margin: 10px auto;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0 0 8px #666;
-  overflow: hidden;
-  padding: 10px;
-  font-family: Merriweather;
-  font-size: 13px;
-}
-
 .blocks {
-  display: block;
-  width: 260px;
-  float: left;
+  display: grid;
+  grid-template-columns: 260px 260px 260px 260px;
+  grid-gap: 50px;
   margin-right: 16px;
   margin-left: 16px;
   padding: 10px;
-  height: 400px;
-  background: #fff;
-  box-shadow: 0 0 8px #666;
+  height: 440px;
+  box-shadow: 0 0 10px #666;
   text-align: justify;
   font-family: Merriweather;
   font-size: 13px;
-  margin-bottom: 35px
+  margin-bottom: 10px;
 
 }
 
@@ -62,7 +50,60 @@ img.icons {
   margin-left: 80px;
 }
 
-@media screen and (min-width: 1080px) {
-  section#blocks {
-    grid-template-columns: 400px 1fr;
+div.video-container {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+div.video-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  margin-left: 15px;
+  width: 90%;
+  height: 150%;
+}
+
+section#social,
+header, footer {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+@media screen and (min-width:1080px) {
+  section#social {
+    grid-template-columns: 60% 40%;
   }
+
+@media screen and (min-width:1080px) {
+  div.media-wrapper {
+      grid-template-columns: 40% 60%;
+    }
+
+@media screen and (max-width: 670px) {
+  section#social div.media-wrapper, section#blocks div.blocks div.video-container {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+section#social div {
+  min-height: 350px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+section#personal div.content-wrapper {
+  margin-left: 15px;
+}
+
+section#social div.content-wrapper {
+  margin-right: 15px;
+}
+
+header {
+  height: 370px;
+}
+
+footer {
+  min-height: 350px;
+}

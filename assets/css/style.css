@@ -131,6 +131,9 @@ section#data-video div.content-wrapper {
 
 header {
   min-height: 370px;
+}
+
+header.p {
   text-align: center;
 }
 

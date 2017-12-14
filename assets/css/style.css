@@ -4,14 +4,14 @@ html {
   background: radial-gradient(circle at center, bisque, lightblue);
 }
 
+/*HEADER*/
 header {
   margin-bottom: 30px;
+  min-height: 150px;
 }
 
-p {
-  margin: 15px;
-}
 
+/*TYPOGRAPHY*/
 body {
   font-size: 15px;
   font-family: "Merriweather";
@@ -23,29 +23,43 @@ a:link {
   text-decoration: none;
 }
 
-h1,h2,h3, {
+h1,h2 {
   font-family: "Merriweather";
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 h1 {
   font-size: 2.7rem;
-  color: white;
-  text-shadow: 2px 2px black;
   text-align: center;
 }
 
 h2 {
   font-size: 2rem;
-  color: white;
-  text-shadow: 2px 2px black;
   margin-left: 15px;
 }
 
 h3 {
-  font-size: 15px;
   text-align: center;
 }
 
+p {
+  margin: 15px;
+}
+
+/*BODY (INTRO) SECTION*/
+section#intro {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+@media screen and (min-width:1080px) {
+  section#intro {
+      grid-template-columns: 45% 55%;
+    }
+}
+
+/*BODY (APP) SECION*/
 section#grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -93,6 +107,7 @@ div.img-container {
   margin-top: 15px;
 }
 
+/*BODY (EXPLAINED VID) SECTION*/
 div.video-container {
   position: relative;
   width: 100%;
@@ -100,7 +115,7 @@ div.video-container {
 }
 
 div.video-container iframe {
-  position: absolute;
+  position: relative;
   top: 0; left: 0;
   margin-left: 15px;
   min-width: 90%;
@@ -108,25 +123,16 @@ div.video-container iframe {
   margin-bottom: 35px
 }
 
-section#data-video,
-section#intro {
+section#data-video {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+ margin-right: 15px;
 }
 
-@media screen and (min-width:1080px) {
-  section#intro {
-      grid-template-columns: 45% 55%;
-    }
-
-section#data-video div.content-wrapper {
-  margin-right: 15px;
-}
-
-header {
-  min-height: 370px;
-}
-
+/*FOOTER*/
 footer {
-  height: 350px;
+  height: 75px;
+  color: black;
+  text-align: center;
+  font-size: 13px;
 }

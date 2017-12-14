@@ -100,8 +100,8 @@ header {
     }
 
 @media screen and (max-width: 670px) {
-  section#data-video div.media-wrapper, section#blocks, div.blocks {
-    grid-row: 1;
+  section#data-video, div.media-wrapper, section#grid, div.video-container {
+    grid-row: 2;
     grid-column: 1;
   }
 

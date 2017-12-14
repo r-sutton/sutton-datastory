@@ -83,14 +83,14 @@ div.video-container iframe {
   margin-bottom: 35px
 }
 
-section#social,
+section#data-video,
 header {
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media screen and (min-width:1080px) {
-  section#social {
+  section#data-video {
     grid-template-columns: 60% 40%;
   }
 
@@ -100,12 +100,12 @@ header {
     }
 
 @media screen and (max-width: 670px) {
-  section#social div.media-wrapper, section#blocks, div.blocks {
+  section#data-video div.media-wrapper, section#blocks, div.blocks {
     grid-row: 1;
     grid-column: 1;
   }
 
-section#social div.content-wrapper {
+section#data-video div.content-wrapper {
   margin-right: 15px;
 }
 

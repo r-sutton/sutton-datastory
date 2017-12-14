@@ -31,7 +31,6 @@ h1 {
   font-size: 2.7rem;
   color: white;
   text-shadow: 2px 2px black;
-  margin-left: 15px;
   text-align: center;
 }
 
@@ -121,7 +120,7 @@ section#intro {
 
 @media screen and (min-width:1080px) {
   section#intro {
-      grid-template-columns: 46% 54%;
+      grid-template-columns: 45% 55%;
     }
 
 @media screen and (max-width: 670px) {
